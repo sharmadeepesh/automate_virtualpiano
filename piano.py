@@ -1,13 +1,4 @@
 import os
-try:
-	import time
-	import webbrowser
-except ModuleNotFoundError:
-	print("Some dependencies were not found. Installing them for you.")
-	os.system("python -m pip install webbrowser time")
-
-
-piano_url = "https://virtualpiano.net/"
 
 try:
 	import requests
@@ -16,7 +7,9 @@ try:
 	from bs4 import BeautifulSoup
 except ModuleNotFoundError:
 	print("Some dependencies were not found. We're installing them for you. Please wait")
-	os.system('python3 -m pip install requests, selenium, pyautogui, bs4')
+	os.system('python3 -m pip install requests, time, webbrowser, pyautogui, bs4')
+
+piano_url = "https://virtualpiano.net/"
 
 def main():
 	newsheet = ""
