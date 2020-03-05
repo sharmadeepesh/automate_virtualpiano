@@ -2,7 +2,6 @@ import os
 
 try:
 	import requests
-	from selenium import webdriver
 	import pyautogui
 	from bs4 import BeautifulSoup
 except ModuleNotFoundError:
@@ -12,7 +11,6 @@ except ModuleNotFoundError:
 piano_url = "https://virtualpiano.net/"
 
 def main():
-	newsheet = ""
 	url = str(input("Enter the piano sheet link for the song (From VirtualPiano.net) : "))
 	response = requests.get(url).text
 	soup = BeautifulSoup(response, 'html.parser')
@@ -45,11 +43,22 @@ def play(sheet):
 		elif sheet[i] == ' ':
 			time.sleep(0.2)
 		else:
-			pass
-			
+			pass	
 
 if __name__ == "__main__":
-	sheet = main()
-	webbrowser.open_new(piano_url)
-	time.sleep(10)
-	play(sheet)
+	print("""                                                                                                         
+                                                                                                            
+                                                                                                            
+  ano CLIPia   CLIPi        ian       ano C   iano C    ano CL                CLIP     CLIPi      IPiano    
+   no CLIPian  CLIPi       Piano      ano C   iano C   iano CLI            no CLIPian  CLIPi      IPiano    
+   no C    ano CLIP        Piano       no CL   ano    Pian  CLIP          ano   IPian   LIP        Pian     
+   no CLIPiano  LIP       IPiano       no CLI  ano    Pia    LIP         ian     Pian   LI          ian     
+   no CLIPian  CLI        IPi no       no CLIP ano   IPia    LIPi        ian            LI         Pia      
+   no CLIPia    LIP      LIPiano C     no CLIP ano   IPia    LIPi        ia             LI          ian     
+   no           LI       LIPiano C     no  LIPiano    Pia    LIP         ia             LIP         ia      
+   no           LI      CLIP   o CL    no  LIPiano    Pia    LIP         ia       ia   CLIP     C   ia      
+   no          CLIP     CLI      CL    no   IPiano    Pian  CLIP         ian     Pia    LIP     C  Pian     
+  ano CL       CLIPi  o CLIP   o CLIP ano C  Piano     iano CLI           ano CLIPia   CLIPiano C IPiano    
+  ano CL       CLIPia o CLIP   o CLIP ano C   iano      ano CL             no CLIP     CLIPiano C IPiano    
+                                                                                              
+											      By Sharma Deepesh
