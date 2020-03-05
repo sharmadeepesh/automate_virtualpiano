@@ -61,4 +61,8 @@ if __name__ == "__main__":
   ano CL       CLIPi  o CLIP   o CLIP ano C  Piano     iano CLI           ano CLIPia   CLIPiano C IPiano    
   ano CL       CLIPia o CLIP   o CLIP ano C   iano      ano CL             no CLIP     CLIPiano C IPiano    
                                                                                               
-											      By Sharma Deepesh
+											      By Sharma Deepesh"""
+	sheet = main()
+	webbrowser.open_new(piano_url)
+	time.sleep(10)
+	play(sheet)										     
