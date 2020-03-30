@@ -3,6 +3,8 @@ import os
 try:
 	import requests
 	import pyautogui
+	import webbrowser
+	import time
 	from bs4 import BeautifulSoup
 except ModuleNotFoundError:
 	print("Some dependencies were not found. We're installing them for you. Please wait")
