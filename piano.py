@@ -8,7 +8,7 @@ try:
 	from bs4 import BeautifulSoup
 except ModuleNotFoundError:
 	print("Some dependencies were not found. We're installing them for you. Please wait")
-	os.system('python3 -m pip install requests, time, webbrowser, pyautogui, bs4')
+	os.system('python3 -m pip install webbrowser, pyautogui, bs4')
 
 piano_url = "https://virtualpiano.net/"
 
